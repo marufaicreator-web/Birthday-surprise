@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happiest Birthday Aradhya</title>
+<style>
+body{font-family:Arial,sans-serif; text-align:center; background:#fdeff4; margin:0; padding:0;}
+.card{background:white; max-width:400px; margin:50px auto; padding:20px; border-radius:16px; box-shadow:0 10px 25px rgba(0,0,0,.1);}
+h1{color:#e75480;}
+button{padding:10px 20px; border:none; border-radius:20px; background:#e75480; color:white; font-size:16px; margin-top:20px; cursor:pointer;}
+.step{display:none;}
+img{max-width:200px; margin-top:20px;}
+audio{margin-top:20px;}
+</style>
+<script>
+let s=0;
+function nextStep(){
+  document.getElementsByClassName('step')[s].style.display='none';
+  s++;
+  document.getElementsByClassName('step')[s].style.display='block';
+}
+</script>
+</head>
+<body>
+
+<div class="card">
+
+<!-- Step 1 -->
+<div class="step" style="display:block;">
+<h1>Ready for a Surprise? 🌸</h1>
+<button onclick="nextStep()">1 ➜ 2 ➜ 3</button>
+</div>
+
+<!-- Step 2 -->
+<div class="step">
+<h1>🐱 Cute Cat Surprise!</h1>
+<img src="https://i.imgur.com/jbZ5aQv.png" alt="Cute Cat">
+<p>Click below to open the letter 💌</p>
+<button onclick="nextStep()">Open Letter</button>
+</div>
+
+<!-- Step 3 -->
+<div class="step">
+<h1>💌 Your Letter</h1>
+<p>Happiest Birthday Aradhya🌸<br><br>
+I still remember that days when I used to say "madam ji🌹"<br><br>
+I still remember I wanted to wish you as a Madam ji but unfortunately we broke up,
+I hope you will response this small gift from my side.<br>
+I know you didn't want to talk but I was waiting from last 1-2 month for this special day.<br><br>
+Waiting for reply..<br><br>
+<b>|| Pyari Madam Ji❤ ||</b></p>
+<audio controls>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+</div>
+
+</div>
+</body>
+</html>
